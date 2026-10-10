@@ -18,6 +18,8 @@
 ## 📖 Executive Summary
 This repository showcases an automated cloud infrastructure deployment on **Amazon Web Services (AWS)**. The project focuses on scalable infrastructure provisioning, automated configurations using **EC2 User Data scripts**, security group hardening, and multi-service management on **Amazon Linux 2**.
 
+📄 **[Download / View Lab Documentation (DOCX)](LAB3(ec2_multi_service_lab).docx)**
+
 ---
 
 ## 🏗️ Architecture & Component Stack
