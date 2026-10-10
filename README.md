@@ -18,7 +18,7 @@
 ## 📖 Executive Summary
 This repository showcases an automated cloud infrastructure deployment on **Amazon Web Services (AWS)**. The project focuses on scalable infrastructure provisioning, automated configurations using **EC2 User Data scripts**, security group hardening, and multi-service management on **Amazon Linux 2**.
 
-📥 **[Download Lab Documentation File (DOCX)](LAB3(ec2_multi_service_lab).docx)**
+📄 **[View Lab Documentation (PDF)](ec2_multi_service_lab.pdf)**
 
 ---
 
@@ -53,6 +53,6 @@ Configured granular inbound rules on the AWS Security Group to regulate incoming
 
 ## 📂 Repository Structure
 ```text
-├── LAB3(ec2_multi_service_lab).docx   # Comprehensive lab manual and documentation
+├── ec2_multi_service_lab.pdf          # Comprehensive lab manual and documentation
 ├── aws-ec2-multi-service-lab.png      # High-level architecture and execution workflow
 └── README.md                          # Project documentation
