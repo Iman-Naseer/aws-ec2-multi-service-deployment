@@ -28,26 +28,26 @@ The EC2 instance acts as a centralized server bootstrapping three essential ente
 | Component | Port | Service Role & Function |
 | :--- | :---: | :--- |
 | **NGINX** | `80` | High-performance web server and reverse proxy, verified via public browser access. |
-| **MongoDB** | Default | Scalable NoSQL database server backend (`mongod`)[cite: 1]. |
-| **Zabbix Agent** | `10050` | Lightweight monitoring agent configured for infrastructure health tracking[cite: 1]. |
+| **MongoDB** | Default | Scalable NoSQL database server backend (`mongod`). |
+| **Zabbix Agent** | `10050` | Lightweight monitoring agent configured for infrastructure health tracking. |
 
 ---
 
 ## ⚙️ Implementation Workflow
 
 ### 1. Provisioning & Configuration Automation
-* Deployed an Amazon EC2 instance running Amazon Linux 2[cite: 1].
-* Configured an automated **User Data boot script** to silent-install and launch NGINX, MongoDB, and Zabbix Agent on startup[cite: 1].
+* Deployed an Amazon EC2 instance running Amazon Linux 2.
+* Configured an automated **User Data boot script** to silent-install and launch NGINX, MongoDB, and Zabbix Agent on startup.
 
 ### 2. Infrastructure Security Hardening
 Configured granular inbound rules on the AWS Security Group to regulate incoming traffic:
-* **TCP Port 22 (SSH):** Restricted remote management access[cite: 1].
-* **TCP Port 80 (HTTP):** Opened public web traffic access for NGINX[cite: 1].
-* **TCP Port 10050 (Zabbix Agent):** Configured network tracking for systems monitoring[cite: 1].
+* **TCP Port 22 (SSH):** Restricted remote management access.
+* **TCP Port 80 (HTTP):** Opened public web traffic access for NGINX.
+* **TCP Port 10050 (Zabbix Agent):** Configured network tracking for systems monitoring.
 
 ### 3. Validation & Verification
-* Established a secure SSH session to inspect systemctl service statuses (`active (running)`)[cite: 1].
-* Verified live web server accessibility via the instance's public IP address[cite: 1].
+* Established a secure SSH session to inspect systemctl service statuses (`active (running)`).
+* Verified live web server accessibility via the instance's public IP address.
 
 ---
 
